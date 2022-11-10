@@ -5,7 +5,7 @@ from vshell import Vshell
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--path", default="C:\\Users\\Timothy\\Desktop\\cm_homeworks\\hw1\\workdir.zip")
+    parser.add_argument("--path", default="")
     args = parser.parse_args()
     path = args.path
     img = zipfile.ZipFile(path, 'r')
